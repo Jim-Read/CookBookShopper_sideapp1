@@ -2,7 +2,7 @@ name: continuous integration # Just a name of the workflow
 
 on:
   push:
-    branches: [ main ] # The workflow will be triggered when someone pushes to master.
+    branches: [ master ] # The workflow will be triggered when someone pushes to master.
 
 # Jobs are run in parallel by default
 # They can be optionally made to be run in order
