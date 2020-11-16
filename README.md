@@ -119,3 +119,92 @@ create new shopping list - webview
 Mobile view create/view/history
 ![](docs/wire-frames/5_mobile.jpg)
 
+
+
+## WIP DB Schema
+
+1.	Users can create an account and store in their details in the user table and create a password which is stored in the user_login_password table
+2.	When a user logs in, the password is checked in the user_login_password table for a match
+3.	A user can create as many or no recipes as they like 
+4.	A user can create as many or no cookbooks as they like 
+5.	A user can store as many recipes as they like in a cookbook or none
+
+
+![](docs/16_sql_db.png)
+
+
+
+## Endpoints WIP
+
+Appropriate tickets are seen on the trello board relating to Swagger.
+swagger.yaml file has been created and is in GitHub.
+Each endpoint is appropriately documented.
+A short description is the readme about how to display the documentation.
+
+## CLI Commands
+
+The RDS database can be interacted with the following commands from a virtual environment
+Ensure the environment variables are set in the terminal session
+
+export FLASK_APP=main.py
+export FLASK_ENV=development
+
+You can now check to see if the CLI commands are now loaded into the terminal session
+
+flask --help
+
+At the bottom you will see the Commands: section and the name that you created
+To see more information about what you can do with the command
+
+flask (command_name) --help
+
+A new menu will show the commands now available
+To use the CLI commands
+
+flask (command_name) (option)
+
+the option will be whatever method you assigned for the command
+
+
+## CRUD setup WIP
+
+Setup on Database
+CRUD resource uses SQLAlchemy
+marshmallow is used as the serialisation library
+Project is split into different files (MVC)
+
+1. Able to create new recipes
+2. Able to edit them
+3. Able to view them all or as a single recipe
+4. Able to delete a recipe
+
+>>other endpoints for cookbooks/ingredients in process
+
+## Configure, Validation, Testing WIP
+
+Your app needs to be configured in the same format as the library_api ie what is inside `default_settings`
+Your seed, drop and create tables functions are created inside commands.py
+The cli commands are documented in your readme
+There is some evidence of validation in your Schema. 
+Your app has been moved into the factory pattern
+There are 4 tests to test your CRUD. 
+
+1. Default settings file setup and working with .env file
+2. CLI seed, create, drop commands working with DB
+3. Validation is included with user recipe creations 
+4. Factory pattern setup 
+5. Some tests have been setup and working - more to come WIP on new endpoints etc
+
+## Authentication and Authorisation WIP
+
+Example of authorisation
+Example of authentication 
+New end points are documented
+New tests are written for the new end points
+
+## FIle Upload WIP
+
+Evidence of file upload somewhere in your app. 
+File upload is documented in readme and or swagger
+
+
