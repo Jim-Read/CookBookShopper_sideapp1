@@ -130,7 +130,7 @@ Mobile view create/view/history
 5.	A user can store as many recipes as they like in a cookbook or none
 
 
-![](docs/16_sql_db.png)
+![](docs/wire-frames/16_sql_db.png)
 
 
 
