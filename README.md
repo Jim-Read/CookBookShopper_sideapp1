@@ -14,12 +14,12 @@ The main purpose of this API/APP is to solve a common problem I have that comes 
 The app makes use of the venv pip package to create a virtual environment. Therefore the package will need to be installed in order to run the app. There after the install instructions are as below:
 
 - Clone the repo: `git clone https://github.com/Jim-Read/CookBookShopper_sideapp1.git`
-- Change directory into the repo: `cd demo_app`
-- Make sure venv is installed: `pip install venv`
+- Change directory into the repo: `cd CookBookShopper_sideapp1/src`
+- Make sure venv is installed: `pip3 install venv`
 - Create the virtual environment: `python3 -m venv venv`
 - Activate the virtual environment: `source venv/bin/activate`
 - Install the dependencies from requirments.txt: `pip3 install -r requirements.txt`
-- Run the app: `python src/main.py`
+- Run the app: `python3 main.py`
 
 ## CI/CD
 The CI/CD pipeline was created using Github Actions. It uses Python3.8, Pip3 and runs on the latest stable version of Ubuntu. The pipeline is started on a push to master.
@@ -141,6 +141,8 @@ swagger.yaml file has been created and is in GitHub.
 Each endpoint is appropriately documented.
 A short description is the readme about how to display the documentation.
 
+to do - re write
+
 ## CLI Commands
 
 The RDS database can be interacted with the following commands from a virtual environment
@@ -178,7 +180,7 @@ Project is split into different files (MVC)
 3. Able to view them all or as a single recipe
 4. Able to delete a recipe
 
->>other endpoints for cookbooks/ingredients in process
+to do - other endpoints for cookbooks/ingredients in process
 
 ## Configure, Validation, Testing WIP
 
@@ -193,7 +195,8 @@ There are 4 tests to test your CRUD.
 2. CLI seed, create, drop commands working with DB
 3. Validation is included with user recipe creations 
 4. Factory pattern setup 
-5. Some tests have been setup and working - more to come WIP on new endpoints etc
+
+to do - Some tests have been setup and working - more to come WIP on new endpoints etc
 
 ## Authentication and Authorisation WIP
 
@@ -202,9 +205,23 @@ Example of authentication
 New end points are documented
 New tests are written for the new end points
 
+1. Users are able to create accounts
+2. Users are able to login - password is hashed and assigned a JWT
+3. Users can create a recipe
+4. Users can only delete or update their own recipes
+
+to do - tests for new endpoints and documented / swagger
+
 ## FIle Upload WIP
 
 Evidence of file upload somewhere in your app. 
 File upload is documented in readme and or swagger
+
+1. S3 bucket created
+2. User is able to upload pictures to a recipe they created
+3. User able to delete image as requested
+4. User can not delete or upload images to any other recipe unless they created it
+
+to do - tests and swagger 
 
 
